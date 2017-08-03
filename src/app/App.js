@@ -29,10 +29,10 @@ class App extends Component {
             <Header />
             <Route exact path='/' component={Directorio} />
             <Route exact path='/reducer' component={Reducer}/>
-           {
-            // <Route exact path='/directorio' component={Directorio} />
-            //  <Route exact path='/direcciones' component={Direcciones} />
-            }
+           
+            <Route exact path='/directorio' component={Directorio} />
+             <Route exact path='/direcciones' component={Direcciones} />
+            
             <Novedades></Novedades> 
             <Footer />
         </div>

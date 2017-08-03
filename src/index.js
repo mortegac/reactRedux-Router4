@@ -4,7 +4,7 @@ import { createStore, combineReducers, applyMiddleware } from 'redux'
 import { Provider } from 'react-redux'
 import createHistory from 'history/createBrowserHistory'
 import { ConnectedRouter, routerReducer, routerMiddleware, push } from 'react-router-redux'
-import reducers from './reducers/index'
+import rootReducers from './reducers/index'
 
 
 import App from './app/App';
@@ -15,8 +15,7 @@ const history = createHistory()                  // Create a history of your cho
 
 const middleware = routerMiddleware(history)    // Build the middleware for intercepting and dispatching navigation actions
 
-
-// Add the reducer to your store on the `router` key.  Also apply our middleware for navigating
+/*
 const store = createStore(
   combineReducers({
     ...reducers,
@@ -24,6 +23,17 @@ const store = createStore(
   }),
   applyMiddleware(middleware)
 )
+
+*/
+// Add the reducer to your store on the `router` key.  Also apply our middleware for navigating
+const store = createStore(
+    rootReducers,
+    applyMiddleware(middleware)
+    
+)
+
+
+
 
 // let store = createStore(combineReducers({
 //   ...reducers,

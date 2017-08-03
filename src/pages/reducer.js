@@ -1,24 +1,20 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux'
 
-// import Ionicon from 'react-ionicons'
-// import '../utils/app.css'
-  
-//Campos
-// id:
-// abrev:
-// nombre:
-
 class Reducer extends Component {
     render () {
+        console.log("PROPS")
         console.log(this.props)
+        console.log("STATE")        
+        console.log(this.state)
+        
         const {func} = this.props
     return (
         <div>
             <h2>REDUCER</h2>
             <ul>
                 {
-                    func.map(x => <li key={x.id}>{x.name}</li> )
+                    // func.map(x => <li key={x.id}>{x.name}</li> )
                 }
             </ul>
 
@@ -30,6 +26,7 @@ class Reducer extends Component {
 
 // export default Reducer;
 const mapStateToProps = state => {
+    console.log(state)
   return {
     ...state,
   }

@@ -1,15 +1,20 @@
 import { combineReducers } from 'redux'
+// import { ConnectedRouter, routerReducer, routerMiddleware, push } from 'react-router-redux'
 import funcionarios from './funcionarios'
 import direcciones from './direcciones'
 
 // export default {
 //   funcionarios,
 // }
+//    router: routerReducer,
 
 
-const rootReducer = combineReducers({
-  func: funcionarios,
-})
 
-export default rootReducer
+const rootReducers = combineReducers({
+    func: funcionarios,
+  })
+  
+
+
+export default rootReducers
 
