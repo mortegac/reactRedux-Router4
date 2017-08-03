@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { createStore, combineReducers, applyMiddleware } from 'redux'
+// import { createStore, combineReducers, applyMiddleware } from 'redux'
+import { createStore, applyMiddleware } from 'redux'
 import { Provider } from 'react-redux'
 import createHistory from 'history/createBrowserHistory'
 import { ConnectedRouter, routerReducer, routerMiddleware, push } from 'react-router-redux'
@@ -26,6 +27,12 @@ const store = createStore(
 
 */
 // Add the reducer to your store on the `router` key.  Also apply our middleware for navigating
+// const store = createStore(
+//     rootReducers,
+//     applyMiddleware(middleware)
+    
+// )
+
 const store = createStore(
     rootReducers,
     applyMiddleware(middleware)

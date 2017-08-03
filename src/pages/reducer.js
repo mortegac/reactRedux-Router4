@@ -7,14 +7,14 @@ class Reducer extends Component {
         console.log(this.props)
         console.log("STATE")        
         console.log(this.state)
-        
-        const {func} = this.props
+
+        const {dir} = this.props
     return (
         <div>
             <h2>REDUCER</h2>
             <ul>
                 {
-                    // func.map(x => <li key={x.id}>{x.name}</li> )
+                    dir.map(x => <li key={x.id}>{x.name}</li> )
                 }
             </ul>
 

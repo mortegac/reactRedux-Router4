@@ -1,10 +1,9 @@
-const initialState = {
-  data: [
+const initialState = [
             { id: '1' ,name: 'Funcionario 1' },
             { id: '2' ,name: 'Funcionario 2' },
             { id: '3' ,name: 'Funcionario 3' },
-        ]
-}
+  ]
+
 
 /**
  * id: String
