@@ -1,15 +1,14 @@
 import { combineReducers } from 'redux'
 import { routerReducer } from 'react-router-redux'
-
+import { reducer as formReducer } from 'redux-form'
 //Reducer
-import funcionarios from './funcionarios'
-import direcciones from './direcciones'
+import post from '../pages/post/reducer'
 
 
 const rootReducers = combineReducers({
-    func: funcionarios,
-    dir: direcciones,
-    router: routerReducer
+    posts: post,
+    router: routerReducer,
+    form: formReducer,
   })
 
 

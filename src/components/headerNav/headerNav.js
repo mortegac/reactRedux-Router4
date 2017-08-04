@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 
 import HeaderLogo from '../../components/headerLogo/headerLogo'
-// import HeaderIcon from '../../components/headerIcon'
+import HeaderIcon from '../../components/headerIcon'
 import HeaderMenu from '../../components/headerMenu'
 
 
@@ -14,6 +14,7 @@ class HeaderNav extends Component {
 
                 <HeaderLogo></HeaderLogo>
                 <HeaderMenu></HeaderMenu>
+                <HeaderIcon></HeaderIcon>
                 
               </nav>
             </div>

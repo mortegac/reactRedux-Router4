@@ -10,25 +10,11 @@ class HeaderBody extends Component {
                 <div className="container">
                 <div className="columns is-vcentered">
                     <div className="column">
-                        <p className="title"><strong>DIRECTORIO TELEFÓNICO</strong></p>
+                        <p className="title" style={{ color: '#fff'}}><strong>DIRECTORIO TELEFÓNICO</strong></p>
                         <p className="subtitle">
                         - Directorio de Funcionarios y unidades Municipales - 
                         </p>
                     </div>
-                   { 
-                    // <div className="column is-narrow">
-                    //     <div id="carbon" className="box">
-                    //         <div id="carbonads">
-                               
-                    //                 <h1>Recuerde actualizar sus datos</h1>
-                               
-                    //         </div>
-                    //     </div>
-                    // </div>
-                    }
-
-
-
                 </div>
                 </div>
            </div>
